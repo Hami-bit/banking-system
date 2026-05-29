@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏦 Banking System</h1>
+    
+    <div class="form-card">
+        <h2>Create Account</h2>
+        <form id="registerForm" onsubmit="handleRegister(event)">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <small id="nameError" class="error-msg"></small>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+            <small id="emailError" class="error-msg"></small>
+
+            <input type="password" id="password" placeholder="Password" required>
+            <div id="passwordStrength" class="strength-container">
+                <div class="strength-bar"><div class="strength-fill" id="strengthFill"></div></div>
+                <small id="strengthText" class="strength-text"></small>
+            </div>
+            <small id="passwordError" class="error-msg"></small>
+
+            <button type="submit" class="btn-primary">Register</button>
+        </form>
+        <p class="auth-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</div>
+
+<script src="validation.js"></script>
+</body>
+</html>

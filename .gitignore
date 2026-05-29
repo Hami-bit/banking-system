@@ -1,0 +1,17 @@
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore PHPStorm / IDE files
+.idea/
+.vscode/
+
+# Ignore runtime files
+*.log
+*.cache
+
+# Ignore XAMPP runtime directories
+/tmp/
+
+# Ignore Composer vendor if added later
+/vendor/

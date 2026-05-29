@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: #f0f4f9;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    margin-bottom: 24px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.45rem;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.btn-logout {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #ef4444;
+    color: #ffffff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dashboard {
+    display: grid;
+    gap: 24px;
+}
+
+.balance-section,
+.transactions,
+.actions {
+    border-radius: 20px;
+    padding: 24px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.balance-section h2,
+.transactions h2,
+.actions h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+#balance {
+    font-size: 3rem;
+    margin: 0.5rem 0 0;
+}
+
+.transactions-list {
+    min-height: 220px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+}
+
+.transaction-item span {
+    display: inline-block;
+}
+
+.action-buttons {
+    display: grid;
+    gap: 16px;
+}
+
+.action-buttons > div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.btn-success {
+    background: #10b981;
+}
+
+.btn-danger {
+    background: #ef4444;
+}
+
+.error-box {
+    padding: 16px;
+    border-radius: 14px;
+    background: #fee2e2;
+    color: #991b1b;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 720px) {
+    .navbar,
+    .dashboard {
+        padding: 16px;
+    }
+
+    .action-buttons > div {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="navbar">
+        <h1>🏦 Banking System</h1>
+        <nav>
+            <span id="userEmail"></span>
+            <a href="logout.php" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="balance-section">
+            <h2>Your Balance</h2>
+            <h1 id="balance">$0.00</h1>
+        </section>
+
+        <section class="transactions">
+            <h2>Transactions</h2>
+            <div id="transactionsList" class="transactions-list"></div>
+        </section>
+
+        <section class="actions">
+            <h3>Quick Actions</h3>
+            <div class="action-buttons">
+                <div>
+                    <input type="number" id="amount" placeholder="Amount" min="0" step="0.01">
+                    <button class="btn-success" onclick="deposit()">Deposit</button>
+                </div>
+                <div>
+                    <button class="btn-danger" onclick="withdraw()">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
